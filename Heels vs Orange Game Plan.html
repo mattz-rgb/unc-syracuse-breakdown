@@ -1,0 +1,870 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Heels vs Orange Game Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#0B1220; --bg-2:#0F1829; --surface:#121D31; --surface-2:#18253D;
+  --fg:#E9EFF8; --fg-2:#B4C1D4; --muted:#8696AE; --line:#24344F;
+  --unc:#4690CC; --cuse:#E26E1A; --unc-ink:#6FB0E6; --cuse-ink:#F0883A;
+  --on-team:#07101D; --good:#4FC08D; --bad:#F0605D;
+  --grid:rgba(255,255,255,.035); --shadow:0 10px 30px rgba(0,0,0,.35);
+  --display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
+  --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#EDF1F6; --bg-2:#E4EAF2; --surface:#FFFFFF; --surface-2:#F3F6FA;
+    --fg:#0E1A2E; --fg-2:#34455F; --muted:#5B6B85; --line:#CFD9E6;
+    --unc:#2D77AD; --cuse:#CF5200; --unc-ink:#216596; --cuse-ink:#B04500;
+    --on-team:#FFFFFF; --good:#1E8A5E; --bad:#C9403D;
+    --grid:rgba(14,26,46,.05); --shadow:0 10px 30px rgba(14,26,46,.10);
+    color-scheme:light;
+  }
+}
+:root[data-theme="light"]{
+  --bg:#EDF1F6; --bg-2:#E4EAF2; --surface:#FFFFFF; --surface-2:#F3F6FA;
+  --fg:#0E1A2E; --fg-2:#34455F; --muted:#5B6B85; --line:#CFD9E6;
+  --unc:#2D77AD; --cuse:#CF5200; --unc-ink:#216596; --cuse-ink:#B04500;
+  --on-team:#FFFFFF; --good:#1E8A5E; --bad:#C9403D;
+  --grid:rgba(14,26,46,.05); --shadow:0 10px 30px rgba(14,26,46,.10);
+  color-scheme:light;
+}
+:root[data-theme="dark"]{ color-scheme:dark; }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{
+  background:var(--bg); color:var(--fg); font-family:var(--sans); font-size:17px; line-height:1.65;
+  padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 64px; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.wrap{max-width:1200px;margin:0 auto}
+h1,h2,h3,h4{margin:0;font-weight:800;text-wrap:balance}
+p{margin:0 0 1em}
+a{color:inherit}
+.mono{font-family:var(--mono)}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px))) calc(-1*max(16px,env(safe-area-inset-right,0px)));
+  padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));
+  background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:14px;padding-block:10px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:900;font-size:22px;letter-spacing:.04em;text-transform:uppercase;display:flex;gap:8px;align-items:baseline;white-space:nowrap}
+.brand i{font-style:normal;color:var(--muted);font-weight:700;font-size:15px}
+.brand .u{color:var(--unc-ink)} .brand .s{color:var(--cuse-ink)}
+.links{display:flex;gap:2px;overflow-x:auto;flex:1 1 320px;min-width:0;scrollbar-width:none;order:3}
+.links::-webkit-scrollbar{display:none}
+.links a{font:600 12px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:9px 10px;border-radius:999px;white-space:nowrap;transition:color .15s,background .15s}
+.links a:hover{color:var(--fg)}
+.links a.on{color:var(--fg);background:var(--surface-2)}
+.ctrls{display:flex;gap:8px;margin-left:auto;align-items:center}
+.seg{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{all:unset;cursor:pointer;font:600 12px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;padding:8px 12px;border-radius:999px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.seg button:focus-visible,.tbtn:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.seg button[aria-pressed="true"]{background:var(--surface-2);color:var(--fg)}
+.seg button[data-v="unc"][aria-pressed="true"]{background:var(--unc);color:var(--on-team)}
+.seg button[data-v="cuse"][aria-pressed="true"]{background:var(--cuse);color:var(--on-team)}
+.tbtn{all:unset;cursor:pointer;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);display:grid;place-items:center;color:var(--fg-2)}
+.tbtn svg{width:16px;height:16px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:56px 0 40px;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0 calc(50% - 50vw);z-index:-1;
+  background:
+    radial-gradient(900px 380px at 12% 0%,color-mix(in srgb,var(--unc) 26%,transparent),transparent 70%),
+    radial-gradient(900px 380px at 92% 10%,color-mix(in srgb,var(--cuse) 24%,transparent),transparent 70%),
+    repeating-linear-gradient(90deg,var(--grid) 0 2px,transparent 2px 72px);
+}
+.kick{display:flex;flex-wrap:wrap;gap:8px 18px;font:500 12.5px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-2)}
+.kick b{color:var(--fg);font-weight:600}
+.score{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px 28px;align-items:end;margin:34px 0 26px}
+.tm h1,.tm .nm{font-family:var(--display);font-weight:900;text-transform:uppercase;line-height:.84;letter-spacing:-.005em;font-size:clamp(54px,11.5vw,150px)}
+.tm.unc .nm{color:var(--fg);text-shadow:0 3px 0 var(--unc)}
+.tm.cuse{text-align:right}
+.tm.cuse .nm{color:var(--fg);text-shadow:0 3px 0 var(--cuse)}
+.rec{margin-top:14px;font:500 14px/1.5 var(--mono);color:var(--fg-2);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tm.cuse .rec{justify-content:flex-end}
+.rec .pill{border:1px solid var(--line);background:var(--surface);padding:3px 10px;border-radius:999px;font-size:12.5px}
+.rec .pill.u{border-color:var(--unc)} .rec .pill.s{border-color:var(--cuse)}
+.pick{grid-column:1/-1;order:3;text-align:center;padding-top:20px;border-top:1px solid var(--line)}
+.pick .lab{font:600 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.pick .fin{font-family:var(--display);font-weight:900;font-size:clamp(56px,8vw,110px);line-height:1;margin:10px 0 6px;white-space:nowrap}
+.pick .fin .a{color:var(--unc-ink)} .pick .fin .b{color:var(--cuse-ink)} .pick .fin em{font-style:normal;color:var(--muted);padding:0 .12em}
+.pick .psub{font:500 12px/1.4 var(--mono);color:var(--fg-2)}
+.lede{max-width:760px;font-size:clamp(18px,2.1vw,21px);line-height:1.6;color:var(--fg-2);margin-top:30px}
+.lede strong{color:var(--fg);font-weight:600}
+
+/* ---------- sections ---------- */
+section{padding-top:72px}
+.sh{display:flex;align-items:baseline;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sh .no{font:500 13px/1 var(--mono);color:var(--muted);letter-spacing:.1em}
+.sh h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(34px,5.4vw,62px);line-height:.95;letter-spacing:.005em}
+.sh .note{flex:1 1 100%;max-width:720px;color:var(--fg-2);font-size:16.5px;margin:6px 0 0}
+
+/* ---------- tale of the tape ---------- */
+.tape{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px clamp(14px,3vw,30px) 8px;box-shadow:var(--shadow)}
+.tape-top{display:grid;grid-template-columns:1fr 1fr;font:800 clamp(18px,3vw,28px)/1 var(--display);text-transform:uppercase;letter-spacing:.04em;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.tape-top .l{color:var(--unc-ink)} .tape-top .r{color:var(--cuse-ink);text-align:right}
+.trow{padding:14px 0;border-bottom:1px solid var(--line)}
+.trow:last-child{border-bottom:0}
+.tl{text-align:center;font:600 11.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.th{display:grid;grid-template-columns:1fr 1fr;gap:0 4px}
+.half{display:flex;flex-direction:column;gap:6px;min-width:0}
+.half.u{align-items:flex-end;text-align:right} .half.s{align-items:flex-start;text-align:left}
+.val{display:flex;align-items:center;gap:9px;font:600 clamp(17px,2.4vw,22px)/1 var(--mono);color:var(--fg)}
+.half.u .val{flex-direction:row-reverse}
+.rk{font:500 11px/1 var(--mono);padding:4px 7px;border-radius:999px;border:1px solid var(--line);color:var(--fg-2);white-space:nowrap}
+.win .rk{background:var(--tc);border-color:var(--tc);color:var(--on-team);font-weight:600}
+.half.u{--tc:var(--unc);padding-right:12px} .half.s{--tc:var(--cuse);padding-left:12px}
+.track{height:12px;width:100%;display:flex}
+.half.u .track{justify-content:flex-end} .half.s .track{justify-content:flex-start}
+.fill{height:100%;width:var(--w);background:var(--tc);border-radius:6px;transform-origin:var(--o);animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
+.half.u .fill{--o:right;border-radius:6px 2px 2px 6px} .half.s .fill{--o:left;border-radius:2px 6px 6px 2px}
+.half:not(.win) .fill{opacity:.55}
+@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.tape-foot{padding:14px 0 12px;font-size:14.5px;color:var(--fg-2);display:flex;gap:10px;align-items:flex-start}
+.tape-foot i{flex:none;width:12px;height:12px;border-radius:3px;background:var(--fg-2);margin-top:6px;opacity:.9}
+.tape-key{display:flex;gap:18px;flex-wrap:wrap;font:500 12px/1 var(--mono);color:var(--muted);padding:6px 0 12px}
+.tape-key span{display:flex;gap:6px;align-items:center}
+.tape-key .k1{width:18px;height:8px;border-radius:3px;background:var(--fg-2)} .tape-key .k2{width:18px;height:8px;border-radius:3px;background:var(--fg-2);opacity:.45}
+.tape-tbl{margin-top:4px}
+.tape-tbl summary{cursor:pointer;font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:10px 0}
+.tape-tbl .tw{overflow-x:auto}
+.tape-tbl table{width:100%;border-collapse:collapse;font:500 13px/1.4 var(--mono);min-width:520px}
+.tape-tbl th,.tape-tbl td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right}
+.tape-tbl th:first-child,.tape-tbl td:first-child{text-align:left}
+.tape-tbl th{color:var(--muted);font-weight:600}
+
+/* ---------- teams (profile) ---------- */
+.profile{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.prose p{color:var(--fg-2)} .prose p strong{color:var(--fg)}
+.series{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--fg-2);border-radius:14px;padding:22px clamp(18px,3vw,32px)}
+.series h3{font:800 clamp(24px,3vw,32px)/1 var(--display);text-transform:uppercase;margin-bottom:12px}
+.series p{color:var(--fg-2);max-width:78ch}
+.series p:last-child{margin:0}
+
+/* ---------- strength of schedule ---------- */
+.sos{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px clamp(18px,3vw,32px) 8px}
+.sos-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:18px}
+.sos-h h3{font:800 clamp(24px,3vw,32px)/1 var(--display);text-transform:uppercase}
+.sos-k{font:500 12px/1.4 var(--mono);letter-spacing:.06em;color:var(--muted)}
+.sos-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:8px 40px;align-items:start}
+.sos-rows{display:flex;flex-direction:column;gap:6px}
+.srow{padding:4px 0 2px}
+.sl{font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg)}
+.sl small{display:block;font:500 11.5px/1.4 var(--mono);letter-spacing:.02em;text-transform:none;color:var(--muted);margin-top:3px}
+.strack{position:relative;height:8px;background:var(--surface-2);border:1px solid var(--line);border-radius:6px;margin:34px 10px 36px}
+.strack .d{position:absolute;left:var(--p);top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid var(--surface);background:var(--tc);box-shadow:0 0 0 1px var(--tc)}
+.strack .d.u{--tc:var(--unc)} .strack .d.s{--tc:var(--cuse)}
+.strack .d b{position:absolute;left:50%;transform:translateX(-50%);font:600 11.5px/1 var(--mono);white-space:nowrap}
+.strack .d.u b{bottom:20px;color:var(--unc-ink)} .strack .d.s b{top:20px;color:var(--cuse-ink)}
+.sends{display:flex;justify-content:space-between;font:500 10.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:-4px 10px 8px}
+.sos-prose p{color:var(--fg-2);font-size:16.5px}
+.sos-prose p strong{color:var(--fg);font-weight:600}
+
+/* ---------- duels ---------- */
+.duel-h{display:flex;align-items:center;gap:14px 18px;flex-wrap:wrap;margin-bottom:16px}
+.duel-h .no{font:500 13px/1 var(--mono);color:var(--muted);letter-spacing:.1em}
+.duel-h h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(34px,5vw,58px);line-height:.95}
+.edge{margin-left:auto;display:flex;flex-direction:column;gap:7px;min-width:200px;max-width:260px;flex:0 1 240px}
+.edge .t{display:flex;justify-content:space-between;font:600 10.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.edge .t b{color:var(--fg);font-weight:600}
+.edge .m{position:relative;height:10px;border-radius:999px;background:linear-gradient(90deg,var(--unc),color-mix(in srgb,var(--unc) 30%,var(--cuse) 70%) 50%,var(--cuse));opacity:.9}
+.edge .m::after{content:"";position:absolute;left:var(--p);top:50%;width:16px;height:16px;border-radius:50%;background:var(--fg);border:3px solid var(--bg);transform:translate(-50%,-50%);box-shadow:0 0 0 1px var(--fg-2)}
+.edge .m::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:2px;background:var(--bg);opacity:.8;z-index:1}
+.duel-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.side{--tc:var(--unc);--ti:var(--unc-ink);position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px clamp(16px,2.4vw,28px) 10px;overflow:hidden;min-width:0}
+.side.cuse{--tc:var(--cuse);--ti:var(--cuse-ink)}
+.side::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--tc)}
+.side::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--tc) 8%,transparent),transparent 180px);pointer-events:none}
+.side>*{position:relative;z-index:1}
+.tag{display:flex;gap:8px;align-items:center;font:600 11.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ti);margin-bottom:12px}
+.tag i{width:9px;height:9px;border-radius:2px;background:var(--tc);display:block;flex:none}
+.side h3{font:800 clamp(25px,2.8vw,34px)/1.02 var(--display);text-transform:uppercase;letter-spacing:.01em;margin-bottom:6px}
+.deck{font:500 13px/1.5 var(--mono);color:var(--muted);margin-bottom:16px}
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px;margin:0 0 18px}
+.chip{border:1px solid var(--line);background:var(--surface-2);border-radius:10px;padding:10px 11px 9px;min-width:0}
+.chip b{display:block;font:600 19px/1.1 var(--mono);color:var(--fg);letter-spacing:-.01em}
+.chip span{display:block;font:500 11.5px/1.35 var(--sans);color:var(--muted);margin-top:4px}
+.side p{color:var(--fg-2);font-size:16.5px}
+.side p strong{color:var(--fg);font-weight:600}
+.sub{font:700 11.5px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ti);margin:20px 0 10px;padding-top:16px;border-top:1px dashed var(--line)}
+
+.matchup{margin-top:16px;background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:18px clamp(16px,2.6vw,28px) 6px;display:grid;grid-template-columns:auto 1fr;gap:4px 22px}
+.matchup .mk{font:700 11.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--fg);background:var(--surface-2);border:1px solid var(--line);border-radius:999px;padding:8px 12px;align-self:start;white-space:nowrap}
+.matchup .mb{min-width:0;max-width:92ch} .matchup .mb p{color:var(--fg-2);font-size:16.5px}
+.matchup .mb strong{color:var(--fg);font-weight:600}
+
+/* ---------- view filter ---------- */
+body[data-view="unc"] .side.cuse,body[data-view="unc"] .tm.cuse .rec .pill.x{display:none}
+body[data-view="cuse"] .side.unc{display:none}
+body[data-view="unc"] .duel-grid,body[data-view="cuse"] .duel-grid,body[data-view="unc"] .profile,body[data-view="cuse"] .profile{grid-template-columns:minmax(0,820px)}
+body[data-view="unc"] .matchup,body[data-view="cuse"] .matchup{display:none}
+
+/* ---------- target / concern cards ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px clamp(16px,2.4vw,26px) 8px;position:relative;overflow:hidden;--tc:var(--good)}
+.cards.worry .card{--tc:var(--cuse)} .cards.hit .card{--tc:var(--unc)}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--tc)}
+.card .n{font:600 12px/1 var(--mono);letter-spacing:.12em;color:var(--muted);margin-bottom:10px}
+.card h3{font:800 clamp(22px,2.4vw,28px)/1.05 var(--display);text-transform:uppercase;margin-bottom:12px}
+.card p{color:var(--fg-2);font-size:16.5px}
+.card.wide{grid-column:1/-1}
+.card.wide p{max-width:100ch}
+
+/* ---------- game flow ---------- */
+.ls{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px clamp(14px,3vw,30px);box-shadow:var(--shadow);overflow-x:auto}
+.ls table{width:100%;min-width:420px;border-collapse:collapse;font:600 clamp(15px,2vw,19px)/1 var(--mono)}
+.ls th{font:600 11px/1 var(--mono);letter-spacing:.14em;color:var(--muted);text-transform:uppercase;padding:0 8px 12px;text-align:center}
+.ls th:first-child{text-align:left}
+.ls td{padding:15px 8px;text-align:center;border-top:1px solid var(--line)}
+.ls td:first-child{text-align:left;font:800 clamp(18px,2.6vw,26px)/1 var(--display);text-transform:uppercase;letter-spacing:.04em}
+.ls tr.u td:first-child{color:var(--unc-ink)} .ls tr.s td:first-child{color:var(--cuse-ink)}
+.ls td.t{font-size:clamp(20px,3vw,30px);font-weight:600;color:var(--fg)}
+.ls .half-mark{color:var(--muted);font-weight:500}
+.flow{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.q{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px clamp(16px,2.4vw,26px) 6px;position:relative;min-width:0}
+.q .qh{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.q .qn{font:900 54px/.8 var(--display);color:var(--line)}
+.q h3{font:800 clamp(21px,2.4vw,27px)/1.05 var(--display);text-transform:uppercase}
+.q .run{font:600 12.5px/1 var(--mono);padding:7px 11px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line);white-space:nowrap}
+.q .run .a{color:var(--unc-ink)} .q .run .b{color:var(--cuse-ink)}
+.q p{color:var(--fg-2);font-size:16.5px}
+.why{margin-top:16px;background:var(--bg-2);border:1px dashed var(--fg-2);border-radius:16px;padding:22px clamp(16px,3vw,32px) 8px}
+.why h3{font:800 clamp(22px,2.6vw,30px)/1 var(--display);text-transform:uppercase;margin-bottom:12px}
+.why p{color:var(--fg-2);max-width:92ch}
+
+/* ---------- final ---------- */
+.final{position:relative;margin-top:72px;border-radius:24px;overflow:hidden;border:1px solid var(--line);isolation:isolate;padding:clamp(28px,5vw,60px) clamp(18px,4vw,56px) 14px;background:var(--surface)}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(100deg,color-mix(in srgb,var(--unc) 30%,transparent) 0,transparent 46%),
+  linear-gradient(260deg,color-mix(in srgb,var(--cuse) 26%,transparent) 0,transparent 46%)}
+.final .lab{font:600 12px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-align:center}
+.fin-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:10px 24px;margin:20px 0 28px}
+.fin-row .t{font:900 clamp(22px,3.2vw,42px)/.95 var(--display);text-transform:uppercase}
+.fin-row .t:first-child{text-align:right;color:var(--unc-ink)} .fin-row .t:last-child{color:var(--cuse-ink)}
+.fin-row .sc{font:900 clamp(78px,11vw,150px)/.8 var(--display);display:flex;gap:.1em;align-items:baseline;white-space:nowrap}
+.fin-row .sc .a{color:var(--unc-ink)} .fin-row .sc .b{color:var(--cuse-ink)} .fin-row .sc em{font-style:normal;color:var(--muted);font-size:.4em}
+.final .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 40px;margin-top:6px}
+.final .cols p{color:var(--fg-2);font-size:16.5px}
+.final .cols p.full{grid-column:1/-1;max-width:90ch}
+.final strong{color:var(--fg)}
+footer.end{margin-top:40px;text-align:center;font:500 12px/1.6 var(--mono);letter-spacing:.06em;color:var(--muted)}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .duel-grid,.profile,.flow,.final .cols,.sos-grid{grid-template-columns:1fr}
+  .matchup{grid-template-columns:1fr}
+  .edge{margin-left:0;flex:1 1 100%;max-width:none}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  .score{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px 10px}
+  .tm h1,.tm .nm{font-size:clamp(36px,10.4vw,60px)}
+  .rec{font-size:12px}
+  .hero{padding-top:34px}
+  .links{order:3;flex-basis:100%}
+  .ctrls{margin-left:0;width:100%;justify-content:space-between}
+  .brand{display:none}
+  section{padding-top:56px}
+  .fin-row{grid-template-columns:1fr 1fr}
+  .fin-row .sc{grid-column:1/-1;order:3;justify-content:center}
+  .fin-row .t:first-child{text-align:left}
+  .q .qn{font-size:40px}
+  .ls{padding:16px 12px}
+  .ls table{min-width:0}
+  .ls th,.ls td{padding-inline:3px}
+  .ls td.half-mark{font-size:11.5px;white-space:nowrap}
+  .ls td:first-child{font-size:17px;width:34%}
+}
+@media (prefers-reduced-motion:reduce){.fill{animation:none}html{scroll-behavior:auto}}
+</style>
+
+<div class="bar"><div class="bar-in">
+  <div class="brand"><span class="u">UNC</span><i>vs</i><span class="s">Cuse</span></div>
+  <nav class="links" aria-label="Sections">
+    <a href="#tape">Tape</a><a href="#teams">Teams</a><a href="#sos">Schedule</a><a href="#scheme">Scheme</a><a href="#qb">QB</a><a href="#rb">RB</a><a href="#wr">WR/TE</a><a href="#ol">OL</a><a href="#dl">DL</a><a href="#lb">LB</a><a href="#db">DB</a><a href="#half">2nd Half</a><a href="#disc">Discipline</a><a href="#st">Special Teams</a><a href="#target">Target</a><a href="#concern">Concern</a><a href="#flow">Game Flow</a><a href="#pick">Pick</a>
+  </nav>
+  <div class="ctrls">
+    <div class="seg" role="group" aria-label="Team view">
+      <button type="button" data-v="both" aria-pressed="true">Both</button>
+      <button type="button" data-v="unc" aria-pressed="false">UNC</button>
+      <button type="button" data-v="cuse" aria-pressed="false">Cuse</button>
+    </div>
+    <button type="button" class="tbtn" id="themeBtn" aria-label="Toggle light and dark theme" title="Toggle theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+    </button>
+  </div>
+</div></div>
+
+<main class="wrap">
+<header class="hero">
+  <div class="kick"><span><b>Kenan Stadium</b> &middot; Chapel Hill</span><span><b>Sat Oct 24</b> &middot; 7:30 p.m. ET</span><span>ACC Network</span><span>Opening line <b>UNC -9.5</b></span></div>
+  <div class="score">
+    <div class="tm unc"><h1 class="nm">North<br>Carolina</h1><div class="rec"><span class="pill u">4-2</span><span class="pill">2-1 ACC</span><span class="pill">4-2 ATS</span></div></div>
+    <div class="pick"><div class="lab">My number</div><div class="fin"><span class="a">31</span><em>&ndash;</em><span class="b">23</span></div><div class="psub">Eight points, inside the 9.5</div></div>
+    <div class="tm cuse"><div class="nm">Syra&shy;cuse</div><div class="rec"><span class="pill">3-3 ATS</span><span class="pill">0-4 ACC</span><span class="pill s">2-4</span></div></div>
+  </div>
+</header>
+
+<section id="tape" style="padding-top:40px">
+  <div class="sh"><span class="no">00</span><h2>Tale of the Tape</h2><p class="note">Syracuse wins seven of nine lines on paper. The two Carolina wins, points allowed and penalty yards, are the entire argument for the Tar Heels. Read the yardage with the <a href="#sos" style="text-decoration:underline;text-underline-offset:3px">strength of schedule</a> in mind: Carolina's slate rates as the tougher one.</p></div>
+  <div class="tape">
+    <div class="tape-top"><div class="l">North Carolina</div><div class="r">Syracuse</div></div>
+    <div class="trow"><div class="tl">Points per game</div><div class="th">
+      <div class="half u"><div class="val"><span>23.5</span><span class="rk">99th</span></div><div class="track"><div class="fill" style="--w:74.1%"></div></div></div>
+      <div class="half s win"><div class="val"><span>31.7</span><span class="rk">52nd</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Total yards per game</div><div class="th">
+      <div class="half u"><div class="val"><span>329.7</span><span class="rk">117th</span></div><div class="track"><div class="fill" style="--w:73.3%"></div></div></div>
+      <div class="half s win"><div class="val"><span>449.7</span><span class="rk">29th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Passing yards per game</div><div class="th">
+      <div class="half u"><div class="val"><span>213.5</span><span class="rk">89th</span></div><div class="track"><div class="fill" style="--w:73.4%"></div></div></div>
+      <div class="half s win"><div class="val"><span>291.0</span><span class="rk">12th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Rushing yards per game</div><div class="th">
+      <div class="half u"><div class="val"><span>116.2</span><span class="rk">120th</span></div><div class="track"><div class="fill" style="--w:73.2%"></div></div></div>
+      <div class="half s win"><div class="val"><span>158.7</span><span class="rk">66th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Points allowed per game</div><div class="th">
+      <div class="half u win"><div class="val"><span>19.2</span><span class="rk">34th</span></div><div class="track"><div class="fill" style="--w:74.7%"></div></div></div>
+      <div class="half s"><div class="val"><span>25.7</span><span class="rk">88th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Yards allowed per game</div><div class="th">
+      <div class="half u"><div class="val"><span>359.0</span><span class="rk">75th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+      <div class="half s win"><div class="val"><span>331.3</span><span class="rk">46th</span></div><div class="track"><div class="fill" style="--w:92.3%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Rush yards allowed per game</div><div class="th">
+      <div class="half u"><div class="val"><span>147.3</span><span class="rk">80th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+      <div class="half s win"><div class="val"><span>139.5</span><span class="rk">64th</span></div><div class="track"><div class="fill" style="--w:94.7%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Pass yards allowed per game</div><div class="th">
+      <div class="half u"><div class="val"><span>211.7</span><span class="rk">69th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+      <div class="half s win"><div class="val"><span>191.8</span><span class="rk">43rd</span></div><div class="track"><div class="fill" style="--w:90.6%"></div></div></div>
+    </div></div>
+    <div class="trow"><div class="tl">Penalty yards per game</div><div class="th">
+      <div class="half u win"><div class="val"><span>33.7</span><span class="rk">5th</span></div><div class="track"><div class="fill" style="--w:34.4%"></div></div></div>
+      <div class="half s"><div class="val"><span>98.0</span><span class="rk">138th</span></div><div class="track"><div class="fill" style="--w:100.0%"></div></div></div>
+    </div></div>
+    <div class="tape-key"><span><i class="k1"></i>Better side of each line, solid</span><span><i class="k2"></i>Other side, dimmed</span><span>Chip = national rank</span></div>
+    <details class="tape-tbl"><summary>View as table</summary><div class="tw">
+<table><thead><tr><th>Line</th><th>North Carolina</th><th>Syracuse</th><th>Better</th></tr></thead><tbody>
+<tr><td>Points per game</td><td>23.5 (99th)</td><td>31.7 (52nd)</td><td>Syracuse</td></tr>
+<tr><td>Total yards per game</td><td>329.7 (117th)</td><td>449.7 (29th)</td><td>Syracuse</td></tr>
+<tr><td>Passing yards per game</td><td>213.5 (89th)</td><td>291.0 (12th)</td><td>Syracuse</td></tr>
+<tr><td>Rushing yards per game</td><td>116.2 (120th)</td><td>158.7 (66th)</td><td>Syracuse</td></tr>
+<tr><td>Points allowed per game</td><td>19.2 (34th)</td><td>25.7 (88th)</td><td>North Carolina</td></tr>
+<tr><td>Yards allowed per game</td><td>359.0 (75th)</td><td>331.3 (46th)</td><td>Syracuse</td></tr>
+<tr><td>Rush yards allowed per game</td><td>147.3 (80th)</td><td>139.5 (64th)</td><td>Syracuse</td></tr>
+<tr><td>Pass yards allowed per game</td><td>211.7 (69th)</td><td>191.8 (43rd)</td><td>Syracuse</td></tr>
+<tr><td>Penalty yards per game</td><td>33.7 (5th)</td><td>98.0 (138th)</td><td>North Carolina</td></tr>
+</tbody></table>
+    </div></details>
+  </div>
+</section>
+
+<section id="teams">
+  <div class="sh"><span class="no">01</span><h2>The Teams</h2><p class="note">Two seasons headed in opposite directions. North Carolina hosts Syracuse in a classic sandwich spot: No. 1 Miami is at Kenan on October 31.</p></div>
+  <div class="prose" style="max-width:100ch;margin-bottom:22px"><p>North Carolina (4-2, 2-1 ACC) hosts Syracuse (2-4, 0-4 ACC) at Kenan Stadium on Saturday, October 24, at 7:30 p.m. ET on the ACC Network. The opening number was Carolina by 9.5, and the Tar Heels are 4-2 against the spread to Syracuse's 3-3. This is the kind of game a program in Year 2 of a rebuild has to win if it wants the season to mean something: the Tar Heels have already matched last year's 4-8 win total through six games, two more wins would make them bowl eligible, and a visit from a winless-in-conference opponent is the softest remaining spot on the calendar. The next one is the hardest. Belichick's entire week is about making sure the Tar Heels don't look through this one.</p></div>
+  <div class="profile">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; 4-2</div>
+      <h3>Better, but not good on offense</h3>
+      <p>The 2026 Tar Heels are a better version of the 2025 Tar Heels in every way that can be measured, but they are still not a good offense. They opened with a 15-10 win over TCU in Dublin, a measure of revenge for the 48-14 loss in Belichick's college debut, then beat East Tennessee State 35-3. The first real test went the wrong way: UNC led Clemson 17-6 at halftime and lost 28-20, and a week after a bye, No. 3 Notre Dame came to Chapel Hill and won 37-26. What has made the team interesting is the last two weeks. UNC went to Pittsburgh and beat No. 25 Pitt 21-17, Belichick's first win over a ranked opponent at Carolina, then went to Duke and beat the Blue Devils 24-20 to bring the Victory Bell back to Chapel Hill. Both games were decided in the final minutes, and both were won by a defense that made plays when it had to.</p>
+      <p>The numbers describe an identity more than a juggernaut. Offensively, UNC averages 329.7 yards per game (117th nationally) and 23.5 points (99th). The passing game sits 89th at 213.5 yards per game, and the rushing offense is 120th at 116.2. Defensively, the Tar Heels allow 359.0 yards per game (75th) but only 19.2 points (34th), which is the kind of gap that comes from forcing field goals, blocking punts, and holding opponents to short fields. The glaring defensive weakness is third down: UNC is 113th nationally, allowing opponents to convert 43.3 percent. The glaring strength, and it is not a small one, is discipline. UNC averages 33.7 penalty yards per game, fifth-best in the FBS, a long way from the flag-heavy team that Belichick publicly blamed for losses last fall.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; 2-4</div>
+      <h3>Looks nothing like a 2-4 team</h3>
+      <p>The Orange are 2-4 and the story of their season is the quarterback room. Syracuse has used five different quarterbacks through six games, started three of them, and enters Saturday with Steve Angeli (Achilles), Amari Odom (shoulder) and Malachi Nelson (a right-foot injury that knocked him out of the Louisville game, on top of bruised ribs) all dealing with injuries. Danny Lauter, a Georgetown transfer, is the next man up. Syracuse is one of four teams nationally to start three quarterbacks, and the only one where all three of those starters have thrown for 300 yards in a game, which tells you both how productive the skill players are and how little continuity the offense has.</p>
+      <p>The record reflects the chaos. After a 66-point opener against New Hampshire, the Orange lost to Cal, lost 27-13 at Pitt, survived UConn 42-41 in overtime behind five Odom touchdowns, lost 28-25 at Virginia, and lost 34-26 to Louisville last Saturday despite a 315-yard, two-touchdown day from Nelson that was undone by two interceptions and a fumble, all in the second half. Syracuse has now lost 11 straight ACC games and 12 straight against Power Four opponents, and one more loss on Saturday would tie the school record. The Orange have been outscored 78-36 in the second half this season, and three of their four losses have come by one score or fewer.</p>
+      <p>Statistically, Syracuse looks nothing like a 2-4 team. It averages 449.7 yards per game (29th), including 291.0 through the air (12th), and 31.7 points (52nd). The defense allows 331.3 yards per game (46th), 191.8 passing (43rd) and 139.5 rushing (64th), but gives up 25.7 points per game (88th). That disconnect is the whole Syracuse story: the yardage is respectable, and the points, the turnovers, and the penalties (98.0 yards per game, 138th nationally, against Carolina's 33.7) are where games are lost. Fran Brown, 14-14 in his third season after a 10-3 debut and a 3-9 follow-up, is dealing with special teams that have missed seven field goals and four extra points with two kickers and two holders already used.</p>
+    </article>
+  </div>
+  <div class="sos" id="sos">
+    <div class="sos-h"><h3>Strength of Schedule</h3><span class="sos-k">1 is hardest, 138 is easiest</span></div>
+    <div class="sos-grid">
+      <div class="sos-rows">
+        <div class="srow"><div class="sl">ESPN strength of schedule<small>Current rating</small></div>
+          <div class="strack"><i class="d u" style="--p:9.5%"><b>UNC 14th</b></i><i class="d s" style="--p:46%"><b>Cuse 64th</b></i></div></div>
+        <div class="sends"><span>Hardest</span><span>Easiest</span></div>
+      </div>
+      <div class="sos-prose">
+        <p>Strength of schedule is the context that complicates the yardage comparison, and the gap is large. ESPN's current rating has Carolina's schedule 14th in difficulty and Syracuse's 64th out of 138 FBS teams (1 is hardest), which is a 50-spot difference.</p>
+        <p>What has actually been played fits the rating. Carolina has played No. 3 Notre Dame, No. 25 Pitt, Clemson and Duke, while each team has an FCS game on its ledger (East Tennessee State for UNC, New Hampshire for Syracuse). The one direct comparison is Pitt: UNC won 21-17 there, and Syracuse lost 27-13 there. It would be a stretch to say Syracuse has feasted on a soft schedule, because Pitt, Virginia and Louisville are real ACC opponents and the Orange are 0-4 in the league. But when Syracuse's 449.7 yards per game (29th) is set beside UNC's 329.7 (117th), the Tar Heels have been collecting theirs against the tougher road, which is a reason to read Syracuse's offensive numbers with some caution rather than throw them out.</p>
+      </div>
+    </div>
+  </div>
+  <div class="series">
+    <h3>The Series and the Stakes</h3>
+    <p>UNC has beaten Syracuse three straight times, most recently 27-10 at the JMA Wireless Dome on October 31, 2025. That game gave Belichick his first ACC win. Carolina had 47 yards of offense before its first touchdown drive, trailed 10-6 at halftime, then scored 21 unanswered in the second half while Syracuse struggled to complete a pass until the second quarter. Demon June had his best game as a Tar Heel, with 182 total yards and two touchdowns. The setup this year is almost the reverse: Syracuse can move the ball, and UNC will try to shorten the game and win it with defense, special teams, and a few big plays.</p>
+  </div>
+</section>
+
+<section id="scheme">
+  <div class="duel-h"><span class="no">02</span><h2>Scheme and Structure</h2></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Coordinators</div>
+      <h3>Petrino's bursts, Belichick's priorities</h3>
+      <div class="deck">Offense: Bobby Petrino &middot; Defense: the reason it is 4-2</div>
+      <div class="chips">
+        <div class="chip"><b>329.7</b><span>yards per game, 117th</span></div>
+        <div class="chip"><b>19.2</b><span>points allowed, 34th</span></div>
+        <div class="chip"><b>43.3%</b><span>third downs allowed, 113th</span></div>
+      </div>
+      <div class="sub">Offense</div>
+      <p>Offensive coordinator Bobby Petrino is the primary play caller, and Belichick has leaned into his usual priority list: win the turnover margin, protect the quarterback, play the field-position game. UNC's best offensive moments this season have come in bursts (a 75-yard touchdown to Shamar Easter against Pitt, a blocked punt that set up a short touchdown against Duke) rather than through sustained drives.</p>
+      <p>The criticism after Clemson was that Petrino's second-half sequencing abandoned a run game that could have produced a 300-yard day. That is a real concern with a quarterback who is not a high-variance passer. The best version of this offense on Saturday runs June, McGill and Hall at a Syracuse front that has been strong in the first half and worn out in the second, and saves the shot plays to Shipp and Easter for play-action.</p>
+      <div class="sub">Defense</div>
+      <p>The Tar Heel defense is the reason this team is 4-2. It allows 19.2 points per game (34th nationally) and 359.0 yards (75th), and it has produced the game-deciding play in each of the last two wins: a late interception at Duke and a fourth-down deflection at Pitt. It also has two clear, repeatable flaws, which are stopping the run and getting off the field on third down (43.3 percent allowed, 113th). Both matter against an offense like Syracuse's.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Coordinators</div>
+      <h3>Nixon's spread, Kehres' new 4-2-5</h3>
+      <div class="deck">Offense: Jeff Nixon &middot; Defense: Vince Kehres &amp; John Scott Jr.</div>
+      <div class="chips">
+        <div class="chip"><b>449.7</b><span>yards per game, 29th</span></div>
+        <div class="chip"><b>331.3</b><span>yards allowed, 46th</span></div>
+        <div class="chip"><b>25.7</b><span>points allowed, 88th</span></div>
+      </div>
+      <div class="sub">Offense</div>
+      <p>This is the offense that should worry UNC, because it moves the ball. Syracuse averages 449.7 yards per game (29th nationally), 291.0 passing (12th), 158.7 rushing (66th) and 31.7 points (52nd), and converts 41.8 percent of its third downs (60th). Jeff Nixon runs a spread attack in his third year as coordinator, and Louisville and Syracuse combined for 669 first-half yards last Saturday. The problem is that Syracuse beats itself: the Orange commit 10.17 penalties per game, last in the FBS, give the ball away in bunches, and have scored 36 second-half points all season.</p>
+      <div class="sub">Defense</div>
+      <p>Syracuse's defense has improved sharply in yardage and not at all in points. First-year coordinator Vince Kehres came over from Toledo, where his defense ranked second nationally in total defense last season, and installed a 4-2-5 base with co-coordinator John Scott Jr. The Orange allowed 427.7 yards and 34.9 points per game in 2025 (124th and 128th), produced only 11 turnovers, and ranked among the bottom three nationally in sacks. This year they allow 331.3 yards per game (46th), 191.8 through the air (43rd) and 139.5 on the ground (64th), but still give up 25.7 points (88th). The yardage is better. The points are not, because the defense fades late and the offense's turnovers have kept giving opponents extra chances.</p>
+    </article>
+  </div>
+</section>
+
+<section id="qb">
+  <div class="duel-h"><span class="no">03</span><h2>Quarterback</h2>
+    <div class="edge" style="--p:50%"><div class="t"><span>UNC</span><b>Even</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Offense</div>
+      <h3>Billy Edwards Jr.</h3>
+      <div class="deck">Sixth-year &middot; third school &middot; the risk-mitigator</div>
+      <div class="chips">
+        <div class="chip"><b>208 yds</b><span>3 TD, 2 INT vs Notre Dame (17-of-28)</span></div>
+        <div class="chip"><b>243 yds</b><span>2 TD, 2 INT at Pitt, 75 on one play</span></div>
+        <div class="chip"><b>191 yds</b><span>1 TD, 0 INT at Duke, plus 20 rushing</span></div>
+      </div>
+      <p>Billy Edwards Jr. is a sixth-year quarterback on his third school, and he has been exactly what Belichick said he wanted: a veteran who values what Edwards himself calls "mitigating risk." He began at Wake Forest as a 2021 redshirt, threw for 2,881 yards and 15 touchdowns against nine interceptions at Maryland in 2024, then lost almost all of 2025 at Wisconsin to a PCL strain in the opener. He beat Texas A&amp;M transfer Miles O'Neill for the job in August, and the early returns are mixed. Against Notre Dame he went 17-of-28 for 208 yards, three touchdowns and two interceptions. At Pitt it was roughly 17-of-25 for 243 yards, two touchdowns and two more picks, and both interceptions were poor decisions, with 75 of his yards coming on one play. At Duke he was cleaner: 15-of-25 for 191 yards, a touchdown, no interceptions, and 20 rushing yards. He has also been sacked three times at Pitt and twice at Duke.</p>
+      <p>The pattern in the film is that Edwards is accurate on the opening script and much less reliable when the game stretches. He hit Shamar Easter for 75 yards at Pitt on a throw that traveled about 20 yards in the air, and he underthrew Jordan Shipp on a 49-yard play that should have been a much bigger gain. The offense has leaned on tight ends underneath, which reflects Edwards' limitations pushing the ball downfield.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Offense</div>
+      <h3>A room in crisis</h3>
+      <div class="deck">Angeli &middot; Odom &middot; Nelson &middot; Lauter &middot; no named starter</div>
+      <div class="chips">
+        <div class="chip"><b>355 yds</b><span>5 TD (+1 rushing) for Odom at UConn, 27-of-37</span></div>
+        <div class="chip"><b>315 yds</b><span>Nelson vs Louisville: 2 TD, 2 INT, 5 sacks</span></div>
+        <div class="chip"><b>5 INT</b><span>Angeli across the Cal and Pitt losses</span></div>
+      </div>
+      <p>This is a position in crisis, and the answer on who starts Saturday is not public. Fran Brown has not named a starter, saying only that Angeli would practice Monday and the staff would see where it goes. Steve Angeli, the Week 1 starter, is still working back from the Achilles he tore in September 2025 and received a platelet-rich plasma injection the week of the UConn game. He completed 20 of 29 for 263 yards and three touchdowns against New Hampshire, then threw five interceptions across the losses to Cal (24-of-49, 306 yards, three picks) and Pitt (13-of-25, 161 yards, two picks) before Brown turned to Odom. Amari Odom replaced him and went 27-of-37 for 355 yards and five touchdowns, with another score on the ground, in the 42-41 overtime win at UConn, before a shoulder injury in overtime sidelined him. Malachi Nelson, a UTEP transfer, played the most recent two games: 16-of-29 for 217 yards and a touchdown at Virginia, and 26-of-39 for 315 yards, two touchdowns, two interceptions and a fumble against Louisville while taking five sacks. He left that game with a right-foot injury on top of bruised ribs. Danny Lauter, a Georgetown transfer, finished at Louisville (3-of-5 for 24 yards) and is the likely starter if Nelson and Odom cannot go.</p>
+      <p>The larger point is that all three starters have thrown for at least 300 yards in a game, which is a credit to the receivers and to Nixon's scheme, and none of them has been dependable at protecting the football. Syracuse has thrown at least seven interceptions in the five games before Louisville and added two more last week. If Lauter plays, the Tar Heels are facing a quarterback who has attempted only a handful of passes for Syracuse, in an offense that will probably be working from a simpler script.</p>
+    </article>
+  </div>
+  <div class="matchup"><span class="mk">The matchup</span><div class="mb">
+    <p>Against a Syracuse secondary that is gettable but opportunistic, the question is not whether Edwards can complete 65 percent of his passes. It is whether he turns the ball over in the one or two stretches where Syracuse's defense gets the game to feel loose. <strong>Davien Kerr</strong> is the one player in that secondary who has repeatedly turned a coverage snap into a turnover, and Edwards threw two interceptions each against Notre Dame and Pitt. A bad throw into the middle of the field with Kerr in the picture is how a seven-point swing happens.</p>
+    <p>On the other sideline, whoever plays quarterback is working behind a line that gave up 38 sacks last year and five against Louisville, and the Tar Heels have the pass rush to exploit that.</p></div></div>
+</section>
+
+<section id="rb">
+  <div class="duel-h"><span class="no">04</span><h2>Running Backs</h2>
+    <div class="edge" style="--p:40%"><div class="t"><span>UNC</span><b>Slight UNC</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Offense</div>
+      <h3>June, McGill, Hall</h3>
+      <div class="deck">Three-man rotation &middot; 116.2 rushing yards per game, 120th</div>
+      <div class="chips">
+        <div class="chip"><b>6.3 ypc</b><span>McGill at Duke, 12 for 75 and the 24-yard winner</span></div>
+        <div class="chip"><b>3.8 ypc</b><span>June at Duke, 13 for 49</span></div>
+        <div class="chip"><b>135-124</b><span>UNC rushing edge over Duke</span></div>
+      </div>
+      <p>The backfield is a three-man rotation of Demon June, Jaylen McGill and Benjamin Hall, and it is the unit most responsible for the offense ranking 120th nationally in rushing at 116.2 yards per game. June, a sophomore (5-foot-11, 215), has five touchdowns, including the 4th-and-2 burst at Duke and the 1-yard score at Pitt, but he ran 13 times for 49 yards (3.8 per carry) at Duke. He was the best player on the field in the last meeting with Syracuse, with 182 total yards and two touchdowns, and the Orange know exactly what he looks like going full speed. McGill has been the more efficient back lately. He carried 12 times for 75 yards at Duke (6.3 per carry), including the 24-yard touchdown that won the game. Hall has been the least productive of the three lately: 12 carries for 25 yards at Pitt. The three were held to roughly 36 yards on 19 carries there, a poor performance, though a Pitt defense that ranks among the best against the run deserves some of the credit.</p>
+      <p>The encouraging data point is that UNC outrushed Duke 135 to 124 with Edwards adding 20 yards. The discouraging one is that the Tar Heels still do not have a back who consistently turns four-yard carries into seven-yard carries.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Offense</div>
+      <h3>Miller, Hill, Johnson</h3>
+      <div class="deck">Committee &middot; 158.7 rushing yards per game, 66th</div>
+      <div class="chips">
+        <div class="chip"><b>123 yds</b><span>Miller vs Louisville, 18 carries and a TD</span></div>
+        <div class="chip"><b>140 yds</b><span>Hill at UConn on 28 carries</span></div>
+        <div class="chip"><b>3.2 ypc</b><span>team average against Louisville</span></div>
+      </div>
+      <p>Syracuse runs a committee and has been without a clear lead back, in part because the 2025 rushing leaders left. Ahmad Miller, a Jackson State transfer who led the SWAC with 1,054 yards last season and is listed at 5-foot-10, 210 pounds, ran 18 times for 123 yards and a touchdown against Louisville. Tylik Hill carried 28 times for 140 yards at UConn, and LSU transfer Ju'Juan Johnson has been in the mix. The team as a whole still averaged just 3.2 yards per carry against Louisville. A fumbled handoff exchange between Nelson and Hill at the Louisville 5-yard line was one of the turning points in that game.</p>
+    </article>
+  </div>
+  <div class="matchup"><span class="mk">The matchup</span><div class="mb">
+    <p>Syracuse allows 139.5 rushing yards per game (64th), and Louisville managed only 3.3 yards per carry against it on Saturday, so this is not a layup for UNC. In the other direction, UNC's defense has been poor against the run, but Syracuse's 158.7 rushing yards per game is a long way from the 241 that Notre Dame piled up.</p></div></div>
+</section>
+
+<section id="wr">
+  <div class="duel-h"><span class="no">05</span><h2>Receivers and Tight Ends</h2>
+    <div class="edge" style="--p:80%"><div class="t"><span>UNC</span><b>Syracuse</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Offense</div>
+      <h3>Shipp, Thurman, Easter</h3>
+      <div class="deck">One receiver and a tight end operation</div>
+      <div class="chips">
+        <div class="chip"><b>671 yds</b><span>Shipp on 60 catches last year</span></div>
+        <div class="chip"><b>75 yds</b><span>Easter's lone catch at Pitt, a touchdown</span></div>
+        <div class="chip"><b>2 TD</b><span>Thurman vs Notre Dame, 14 yards late in the half</span></div>
+      </div>
+      <p>Jordan Shipp is the offense. The junior caught 60 passes for 671 yards last year and has been better this fall: seven catches for 109 yards against Notre Dame, six for 93 (with a 49-yarder) at Pitt, and 75 yards at Duke, plus the five-yard touchdown that was his first of the season and a costly fumble that Duke returned for a score. Shipp owned that fumble on the sideline, and he will likely draw Syracuse's best cover man on Saturday. Everything the Tar Heels do in the passing game is built around getting him the ball in space, and he is the most likely UNC player to bust a 20-plus-yard play.</p>
+      <p>Beyond Shipp, the passing game is a tight end operation. Jelani Thurman had two touchdowns against Notre Dame (including a 14-yarder with 21 seconds left in the first half) and six catches for 29 yards and a score at Pitt, while Easter is the vertical threat, a 75-yard touchdown against Pitt on his lone reception.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Offense</div>
+      <h3>Hatcher, Russell, Ross-Simmons</h3>
+      <div class="deck">The best group on the roster</div>
+      <div class="chips">
+        <div class="chip"><b>13-224</b><span>Hatcher vs Louisville, plus a 41-yard TD</span></div>
+        <div class="chip"><b>7 TD</b><span>Hatcher, the most in the ACC</span></div>
+        <div class="chip"><b>6-53</b><span>Russell vs Louisville and his first TD</span></div>
+      </div>
+      <p>This is the best position group on the Syracuse roster, and it is where UNC's defense will be most tested. Umari Hatcher, a sixth-year receiver, is the best player on the offense. His seven touchdowns lead the ACC, he caught three touchdowns against UConn (the most by a Syracuse player since 2016) and he caught 13 passes for 224 yards and a score against Louisville, including a 65-yard gain and a 41-yard touchdown from Nelson in the first half. He is a deep threat who beats defenders on vertical routes and in jump-ball situations, and Nelson repeatedly found him behind the Louisville secondary down the right sideline.</p>
+      <p>The second piece is Calvin Russell III, the five-star freshman and the highest-ranked recruit the program has landed in more than two decades, who tore an Achilles in spring practice and debuted against UConn. He caught his first collegiate touchdown against Louisville (six catches, 53 yards) and promptly drew a 15-yard celebration penalty that forced a missed extra point, which says plenty about where the program is. Colorado State transfer Justus Ross-Simmons is a jump-ball weapon, Daunte Bacheyie and David Clement give Syracuse tight end options, and Cole Weaver, Elijah Moore and Darien Williams are all on the depth chart. UNC will have to decide how much help to give its corners over the top.</p>
+    </article>
+  </div>
+  <div class="matchup"><span class="mk">The matchup</span><div class="mb">
+    <p>This is where the Syracuse defense is vulnerable: its base is a 4-2-5 with just two linebackers, Chris D'Appolonia and Antoine Deslauriers, who usually lead the team in tackles but were not at their sharpest in the loss at Virginia. A seam from Easter or a middle-of-the-field route from Thurman against that structure is the most realistic way UNC gets chunk plays without asking Edwards to throw deep outside.</p>
+    <p>On the other side, Hatcher and Russell against the Tar Heel secondary is the matchup that decides how loose this game gets. Notre Dame's CJ Carr threw four touchdowns against it, and the Tar Heels cannot afford to wait for the late plays this time.</p></div></div>
+</section>
+
+<section id="ol">
+  <div class="duel-h"><span class="no">06</span><h2>Offensive Line</h2>
+    <div class="edge" style="--p:35%"><div class="t"><span>UNC</span><b>Lean UNC</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Offense</div>
+      <h3>Belichick's identity up front</h3>
+      <div class="deck">Hall, Banfield &middot; Threatt, McRoy &middot; Kelly, Lindberg</div>
+      <div class="chips">
+        <div class="chip"><b>33.7</b><span>penalty yards per game, 5th in the FBS</span></div>
+        <div class="chip"><b>5 sacks</b><span>allowed across Pitt (3) and Duke (2)</span></div>
+        <div class="chip"><b>315 lbs</b><span>Threatt and Lindberg, both listed</span></div>
+      </div>
+      <p>Belichick's identity is built on the offensive line, and it has genuinely improved. The group has juniors Jordan Hall and Aidan Banfield on the left side and Andrew Threatt (6-foot-3, 315, a junior) and Jacqawn McRoy as transfers on the right, with Christo Kelly and Chad Lindberg (6-foot-6, 315) in the rotation. It is a physical, penalty-averse unit that helps explain UNC's fifth-ranked 33.7 penalty yards per game. The concern is pass protection. Edwards went down three times at Pitt and twice at Duke, and the offense stalled in the second half at Clemson.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Offense</div>
+      <h3>Juan Castillo's rebuild</h3>
+      <div class="deck">Mack &middot; Cruz &middot; Stewart &middot; Washington &middot; Pringle</div>
+      <div class="chips">
+        <div class="chip"><b>38 sacks</b><span>allowed in 2025, 12th most nationally</span></div>
+        <div class="chip"><b>5 sacks</b><span>Louisville on Nelson last Saturday</span></div>
+        <div class="chip"><b>1 in 368</b><span>sacks per pass-block snap for Mack, 2025</span></div>
+      </div>
+      <p>Syracuse hired Juan Castillo, a 28-year NFL veteran, to coach the line after allowing 38 sacks in 2025 (third most in the ACC and 12th most nationally), and the results have been uneven. The projected starters are Trevion Mack (6-foot-6, 320) at left tackle, Joe Cruz at left guard, Kahlil Stewart at center, Byron Washington at right guard and Kam Pringle at right tackle. Mack and Cruz both have impressive pass-blocking numbers in their careers, including one sack allowed by Mack on 368 pass-blocking snaps last year. Even so, Louisville sacked Nelson five times.</p>
+    </article>
+  </div>
+  <div class="matchup"><span class="mk">The matchup</span><div class="mb">
+    <p>Syracuse's pass rush has been modest as a unit, which is helpful, though it still had three sacks and 11 tackles for loss against Louisville. If UNC's line holds, the run game should find 4.5 yards a carry. If it doesn't, Edwards is in trouble. In the other direction, Syracuse's line against <strong>Lewis, Abou Jaoude, Harvey and Hoilette</strong> is the matchup to watch.</p></div></div>
+</section>
+
+<section id="dl">
+  <div class="duel-h"><span class="no">07</span><h2>Defensive Line</h2>
+    <div class="edge" style="--p:40%"><div class="t"><span>UNC</span><b>Slight UNC</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Defense</div>
+      <h3>Xavier Lewis and the edges</h3>
+      <div class="deck">Lewis &middot; Abou Jaoude &middot; Harvey &middot; Hoilette &middot; Vilbert</div>
+      <div class="chips">
+        <div class="chip"><b>6.5 sacks</b><span>Lewis, two in each of the first three games</span></div>
+        <div class="chip"><b>10.5</b><span>Abou Jaoude sacks last year, led the ACC</span></div>
+        <div class="chip"><b>147.3</b><span>rush yards allowed per game, 80th</span></div>
+      </div>
+      <p>Xavier Lewis has emerged as one of the better interior defenders in the country. The sophomore tackle (listed at 6-foot, around 250 to 260 pounds) has 28 tackles and 6.5 sacks, with two sacks in each of the first three games, and was an "all-down guy" in the 15-10 win over TCU. At Pitt he finished with 12 tackles, a half-sack, a tackle for loss and a pass breakup. When Lewis is in the backfield, UNC's defense looks like a Belichick defense. When opponents slow him down with doubles and chips, the pass rush is much more ordinary.</p>
+      <p>The edges have been less stable. Melkart Abou Jaoude, a 6-foot-5, 260-pound redshirt senior who led the ACC with 10.5 sacks last year, suffered a hand and wrist injury in the opener, missed the ETSU and Clemson games, and returned against Notre Dame. He is the most dangerous Tar Heel against Syracuse by history: in last year's 27-10 win, he had two sacks, six tackles and a forced fumble, which earned him ACC Defensive Player of the Week. Penn State transfer Jaylen Harvey (two sacks against ETSU), Richmond transfer Donovan Hoilette Jr. (6-foot-4, 245) and Smith Vilbert round out the rotation. The group has depth, but it has not been a dominant run-stopping front. UNC allowed 241 rushing yards on 45 carries to Notre Dame, 150 at Pitt (a poor first half that improved after halftime), and 124 at Duke, which leaves it 80th nationally at 147.3 yards allowed per game. Notre Dame beat it in the rain by running behind center Ashton Craig, and that is the template Syracuse's committee of Ahmad Miller, Tylik Hill and Ju'Juan Johnson will try to copy.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Defense</div>
+      <h3>The portal front</h3>
+      <div class="deck">Adeleye &middot; Fontus &middot; Perry &middot; Johnson (JACK) &middot; Flounoy</div>
+      <div class="chips">
+        <div class="chip"><b>13.5 sacks</b><span>Keyshawn Johnson at UT Martin, FCS All-American</span></div>
+        <div class="chip"><b>11 TFL</b><span>plus 3 sacks against Louisville</span></div>
+        <div class="chip"><b>3.3 ypc</b><span>Louisville's rushing average</span></div>
+      </div>
+      <p>Syracuse rebuilt the front through the portal. UNLV's Tunmise Adeleye (6.0 sacks and 7.5 tackles for loss last year), Dillan Fontus (a top-25 defensive line transfer) and nose tackle Rashard Perry anchor the interior and edge, and Keyshawn Johnson is the JACK, the pass-rush specialist: he had 13.5 sacks and 20 tackles for loss at UT Martin in 2025 and was named an FCS All-American. Georgia State transfer Jartavius Flounoy, who had three sacks as a true freshman, and Isaiah Hastings are in the rotation. The unit had 11 tackles for loss and three sacks against Louisville, a solid showing. Against Virginia, the same group was stout early, harried quarterback Beau Pribula, then fell apart: it was fooled twice by misdirection wildcat plays for touchdowns and could not stop the run in the fourth quarter. Brown pointed to the run defense as a sign of progress after the Louisville game, in which the Cardinals gained 3.3 yards per carry. That is the best sign for Syracuse against a UNC rushing attack that ranks 120th nationally.</p>
+    </article>
+  </div>
+</section>
+
+<section id="lb">
+  <div class="duel-h"><span class="no">08</span><h2>Linebackers</h2>
+    <div class="edge" style="--p:25%"><div class="t"><span>UNC</span><b>UNC</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Defense</div>
+      <h3>McDonald and Seelmann</h3>
+      <div class="deck">The defense's most consistent unit</div>
+      <div class="chips">
+        <div class="chip"><b>4 of 5</b><span>games with double-digit tackles for McDonald</span></div>
+        <div class="chip"><b>12</b><span>McDonald tackles at Pitt, one for loss</span></div>
+        <div class="chip"><b>49</b><span>Seelmann tackles through five games</span></div>
+      </div>
+      <p>Linebacker was the biggest question mark in August and has become the defense's most consistent unit. Derek McDonald, a Syracuse transfer who knows the Orange offense and its personnel from the inside, had double-digit tackles in four of UNC's first five games, including 12 at Pitt (six solo, one for loss). Peyton Seelmann, a 6-foot-4, 240-pound Richmond transfer, had 49 tackles, a forced fumble and a pass breakup through the first five games, eight of them at Pitt. Timir Hickman-Collins (No. 54), Calvin Thomas and Jonathan Agumadu provide depth and have all been in the rotation. McDonald and Seelmann are the most reliable tackling pairing the Tar Heels have had in years. The question is range against Syracuse's wide receivers, who run routes from spread sets that will isolate linebackers in space.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Defense</div>
+      <h3>D'Appolonia and Deslauriers</h3>
+      <div class="deck">Two linebackers in the base 4-2-5</div>
+      <div class="chips">
+        <div class="chip"><b>4 and 3</b><span>tackles at Virginia, D'Appolonia and Deslauriers</span></div>
+        <div class="chip"><b>2</b><span>linebackers on the field in the base</span></div>
+        <div class="chip"><b>104 yds</b><span>Thurman and Easter combined at Pitt, 2 TD</span></div>
+      </div>
+      <p>With only two linebackers in the base 4-2-5, Chris D'Appolonia (the weakside linebacker) and Antoine Deslauriers (the middle linebacker) are the tacklers who carry this group. They are the team's usual leaders in stops, though they made only four and three tackles, respectively, in the loss at Virginia. The linebackers were not the main problem in that game, but they did not stop the bleeding either. The unit will have to cover UNC's tight ends, Thurman and Easter, who combined for 104 receiving yards and two touchdowns at Pitt, with just two linebackers on the field.</p>
+    </article>
+  </div>
+</section>
+
+<section id="db">
+  <div class="duel-h"><span class="no">09</span><h2>Secondary</h2>
+    <div class="edge" style="--p:62%"><div class="t"><span>UNC</span><b>Slight Cuse</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Defense</div>
+      <h3>Late plays, now a bigger test</h3>
+      <div class="deck">Smith &middot; Miller &middot; Patterson &middot; Dopson III</div>
+      <div class="chips">
+        <div class="chip"><b>211.7</b><span>pass yards allowed per game, 69th</span></div>
+        <div class="chip"><b>2 INT</b><span>Greg Smith, against Clemson and Pitt</span></div>
+        <div class="chip"><b>19 sec</b><span>left when Dopson III sealed the Bell</span></div>
+      </div>
+      <p>The secondary was excellent against Pitt, and it has earned that in the biggest moments of the last two weeks. Safety Greg Smith has interceptions against Clemson and Pitt. Smith and Tre Miller picked off Holden Geriner two plays apart on consecutive drives at Pitt, Jaiden Patterson broke up the fourth-down pass that clinched it, and first-year defensive back Kenton Dopson III intercepted Duke's Walker Eget with 19 seconds left to seal the Victory Bell. UNC allows 211.7 passing yards per game (69th), which is fine on paper, but this unit faces a different problem against Syracuse. The Orange average 291.0 passing yards per game (12th nationally), have three quarterbacks who have thrown for 300 yards, and have a sixth-year receiver in Umari Hatcher who has caught seven touchdowns and just went for 224 yards on 13 receptions against Louisville. Notre Dame's CJ Carr threw four touchdowns against it. Against Hatcher and five-star freshman Calvin Russell III, the Tar Heels cannot afford to wait for those late plays.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Defense</div>
+      <h3>Davien Kerr and the back end</h3>
+      <div class="deck">Samuel Jr. &middot; Peal &middot; Long Jr. &middot; Perry &middot; Kerr (nickel)</div>
+      <div class="chips">
+        <div class="chip"><b>191.8</b><span>pass yards allowed per game, 43rd</span></div>
+        <div class="chip"><b>2 INT + sack</b><span>Kerr against Louisville</span></div>
+        <div class="chip"><b>C+</b><span>group grade vs Louisville, 310 yards allowed</span></div>
+      </div>
+      <p>The back end is Syracuse's best defensive group and its most experienced. Demetres Samuel Jr. (who also returns punts), Chris Peal (47 tackles and seven pass breakups in 2025, a 77.2 coverage grade against Louisville), Braheem Long Jr. (53 tackles last year) and Cornell Perry all return, and Davien Kerr plays the nickel. Kerr is the most disruptive of them: three interceptions last year, then two interceptions and a sack against Louisville, a game in which it seemed there were two of him. His identical twin brother is an Orange running back. The group graded a C+ against Louisville despite Kerr's heroics, because Lincoln Kienholz still threw for 310 yards and Louisville converted six of seven third downs.</p>
+      <p>The key point for UNC is that Kerr is the one player in this secondary who has repeatedly turned a coverage snap into a turnover. Shipp will most likely draw one of Syracuse's perimeter corners, Peal or Samuel Jr.</p>
+    </article>
+  </div>
+</section>
+
+<section id="half">
+  <div class="duel-h"><span class="no">10</span><h2>The Second Half</h2>
+    <div class="edge" style="--p:50%"><div class="t"><span>UNC</span><b>Even</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina &middot; Defense</div>
+      <h3>How the games end</h3>
+      <div class="deck">The most important trend has nothing to do with a position group</div>
+      <div class="chips">
+        <div class="chip"><b>22-3</b><span>Clemson's second-half edge, after 17-6 at halftime</span></div>
+        <div class="chip"><b>20-0</b><span>Duke's run after trailing 17-0</span></div>
+        <div class="chip"><b>213-98</b><span>Pitt's first-half yardage lead</span></div>
+      </div>
+      <p>The most important trend on this defense has nothing to do with a position group. It is how the games end. UNC led Clemson 17-6 at halftime and was outscored 22-3 in the second half as the defense ran out of energy against an up-tempo offense. It led Duke 17-0 and watched Duke score 20 unanswered. It trailed Pitt 213-98 in first-half yardage before tightening up. The danger is that Syracuse gets ahead early, as it did against Louisville (10-0), and drags UNC into the kind of track meet its offense is not built for.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse &middot; Defense</div>
+      <h3>Hold for a half, fade late</h3>
+      <div class="deck">The thread through all six games</div>
+      <div class="chips">
+        <div class="chip"><b>78-36</b><span>second-half scoring margin against Syracuse</span></div>
+        <div class="chip"><b>16 yds</b><span>Virginia's rushing in the second quarter</span></div>
+        <div class="chip"><b>10-0</b><span>lead over Louisville that became a loss by eight</span></div>
+      </div>
+      <p>The common thread in Syracuse's six games is one UNC knows well from its own: the Orange hold up for a half and fade late. They have been outscored 78-36 after halftime, so they are more likely to fade late than to attack late. They held Virginia to 16 rushing yards in the second quarter and then could not defend the run in the fourth. They led Louisville 10-0 early and lost by eight.</p>
+    </article>
+  </div>
+  <div class="matchup"><span class="mk">The matchup</span><div class="mb">
+    <p>Both teams have faded after halftime this season, which makes the first-half scoreboard matter more than usual. If UNC is ahead going into the third quarter, its run game and Syracuse's habits make for a good combination.</p></div></div>
+</section>
+
+<section id="disc">
+  <div class="duel-h"><span class="no">11</span><h2>Discipline and Turnovers</h2>
+    <div class="edge" style="--p:8%"><div class="t"><span>UNC</span><b>UNC</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina</div>
+      <h3>Clean on flags, loose on throws</h3>
+      <div class="deck">Fifth in the FBS in penalty yards</div>
+      <div class="chips">
+        <div class="chip"><b>33.7</b><span>penalty yards per game, 5th</span></div>
+        <div class="chip"><b>4 INT</b><span>Edwards across Notre Dame and Pitt</span></div>
+        <div class="chip"><b>2-1</b><span>turnover deficit at Duke, with Shipp's fumble</span></div>
+      </div>
+      <p>UNC averages 33.7 penalty yards per game, fifth-best in the FBS, a long way from the flag-heavy team that Belichick publicly blamed for losses last fall. The discipline is the clearest sign that the program has changed.</p>
+      <p>The turnover side is less comfortable. Edwards threw two interceptions against Notre Dame and two more at Pitt, and even with a clean day from him at Duke, UNC lost the turnover battle 2-1, including Shipp's fumble that Duke returned for a touchdown. UNC can survive one turnover. It probably cannot survive three against a team that scores from anywhere.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse</div>
+      <h3>The thing hurting Syracuse most</h3>
+      <div class="deck">Last in the FBS in flags</div>
+      <div class="chips">
+        <div class="chip"><b>10.17</b><span>penalties per game, last in the FBS</span></div>
+        <div class="chip"><b>98.0</b><span>penalty yards per game, 138th</span></div>
+        <div class="chip"><b>8 / 88</b><span>flags and yards against Louisville</span></div>
+      </div>
+      <p>The thing that is hurting Syracuse most is not talent. The Orange are last in the FBS in both flags (10.17 per game) and penalty yards (roughly 94 to 98 per game), and they added eight more flags for 88 yards against Louisville, along with three second-half turnovers. Syracuse has thrown at least seven interceptions in the five games before Louisville and two more last week, and the Orange fumbled an exchange at the Louisville 5-yard line.</p>
+    </article>
+  </div>
+  <div class="matchup"><span class="mk">The matchup</span><div class="mb">
+    <p>UNC is fifth in the country at 33.7 penalty yards per game and Syracuse is last in flags. <strong>That gap by itself is probably worth a score.</strong></p></div></div>
+</section>
+
+<section id="st">
+  <div class="duel-h"><span class="no">12</span><h2>Special Teams</h2>
+    <div class="edge" style="--p:12%"><div class="t"><span>UNC</span><b>UNC</b><span>Cuse</span></div><div class="m"></div></div></div>
+  <div class="duel-grid">
+    <article class="side unc">
+      <div class="tag"><i></i>North Carolina</div>
+      <h3>Belichick's kicking game</h3>
+      <div class="deck">Priefer &middot; Verhoff &middot; Burrell &middot; Horvath</div>
+      <div class="chips">
+        <div class="chip"><b>98 yds</b><span>Jefferson's kickoff return against Notre Dame</span></div>
+        <div class="chip"><b>19-of-23</b><span>Verhoff on field goals last year</span></div>
+        <div class="chip"><b>1 block</b><span>punt at Duke that led to a Shipp touchdown</span></div>
+      </div>
+      <p>Belichick has emphasized the kicking game throughout his career, and UNC's special teams have been a net positive this year. Mike Priefer arrived as special teams coordinator last year, and the personnel includes returning kicker Rece Verhoff (19 of 23 on field goals last year), LSU transfer Aeron Burrell and Eastern Illinois punter Jacob Horvath. The Tar Heels have used special teams for points: Jaden Jefferson's 98-yard kickoff return to open the second half against Notre Dame cut a 21-14 halftime deficit to 21-20, and a blocked punt against Duke (after the Blue Devils' punter mishandled a snap) set up a three-play, 22-yard drive that ended in Edwards' touchdown pass to Shipp. The caveat is execution on the margins. In the rain against Notre Dame, an errant long snap on the extra point after Jefferson's touchdown left the score at 21-20 instead of tied.</p>
+    </article>
+    <article class="side cuse">
+      <div class="tag"><i></i>Syracuse</div>
+      <h3>A mess</h3>
+      <div class="deck">Barker &middot; Samuel Jr. &middot; Kerr &middot; Hill</div>
+      <div class="chips">
+        <div class="chip"><b>7 FG</b><span>missed through the Virginia game</span></div>
+        <div class="chip"><b>4 XP</b><span>missed, with two kickers and two holders used</span></div>
+        <div class="chip"><b>2 FG</b><span>Barker's misses at Virginia</span></div>
+      </div>
+      <p>Syracuse's special teams have been a mess. Through the Virginia game, the Orange had missed seven field goals and four extra points, gone through two kickers and two holders, and endured shaky snaps from long snapper Fran Brown Jr., the head coach's son. Shay Barker missed two field goals at Virginia, and Syracuse missed another extra point against Louisville after Calvin Russell III's celebration penalty moved the ball back 15 yards. The unit improved at Louisville, but the standard is low. Demetres Samuel Jr. is the punt returner, with Kerr and Tylik Hill on kickoff returns.</p>
+    </article>
+  </div>
+  <div class="matchup"><span class="mk">The matchup</span><div class="mb">
+    <p>The edge belongs to UNC, and it matters. In a game where the opening line was 9.5 and Syracuse is likely to move the ball between the 20s, the Orange cannot afford to leave points on the field. A missed 35-yard field goal or a flubbed extra point is how a seven-point game becomes a two-score game.</p></div></div>
+</section>
+
+<section id="target">
+  <div class="sh"><span class="no">13</span><h2>Where UNC Should Target</h2><p class="note">Five places to hit Syracuse, in order of how much they should matter.</p></div>
+  <div class="cards hit">
+    <article class="card"><div class="n">TARGET 01</div><h3>The Syracuse quarterback and the pass rush</h3>
+      <p>The single best place to attack is the position Syracuse cannot stabilize. Whoever plays, whether it is Lauter, a hobbled Nelson, a limited Odom or a not-quite-right Angeli, the Orange quarterback is playing behind a line that gave up 38 sacks last year, saw Nelson sacked five times by Louisville, and is going to see Xavier Lewis (6.5 sacks), Melkart Abou Jaoude (10.5 sacks last year, two against this team) and Jaylen Harvey on the same night. UNC does not need to blitz. It needs to win its one-on-ones and collapse the pocket, because Syracuse's quarterbacks have thrown at least nine interceptions in six games (five from Angeli in two games alone) and because the Orange fumbled an exchange at the Louisville 5-yard line. A hurried quarterback is the quickest route to short fields for Edwards.</p></article>
+    <article class="card"><div class="n">TARGET 02</div><h3>The run game against a two-linebacker front</h3>
+      <p>Syracuse's 4-2-5 puts only two linebackers on the field, and the line in front of them faded after halftime at Virginia. UNC has a power-oriented line (Threatt and Lindberg are both listed at 315) and three backs who can each wear defenders down. The target is 30-plus carries and a feel for the second half. Syracuse's run defense is middling (139.5 yards per game, 64th), but Virginia's wildcat misdirection took advantage of its discipline and the Orange had no answer in the fourth quarter. UNC's offense averages 116.2 rushing yards per game (120th), and it needs to lean on a defense that has been outscored 78-36 after halftime. It is also the correct answer to the second-half play-calling that drew criticism after the Clemson loss.</p></article>
+    <article class="card"><div class="n">TARGET 03</div><h3>Tight ends and Shipp over the middle</h3>
+      <p>With only two linebackers, Syracuse is thin in the middle of the field, and Easter and Thurman are the best-suited UNC players to attack that area. Easter's seam route for 75 yards at Pitt is the template, and a defense that will be concerned about Shipp on the outside is exposed over the top of its linebackers. Shipp will most likely draw one of Syracuse's perimeter corners, Peal or Samuel Jr. The goal is two or three explosive plays that flip field position rather than a high-volume passing day.</p></article>
+    <article class="card"><div class="n">TARGET 04</div><h3>Penalties, snaps and field position</h3>
+      <p>Syracuse is last in the FBS in penalties and UNC is fifth-best in penalty yards, so the discipline gap is worth about a score by itself. The Tar Heels should also be aggressive in the kicking game. Syracuse has used two kickers, two holders and a long snapper who has been inconsistent, and a team that blocked a punt at Duke should rush every field goal and punt hard. If UNC gets even one block or one bad snap, the Orange offense is likely to spend the evening playing from behind.</p></article>
+    <article class="card wide"><div class="n">TARGET 05</div><h3>An early lead</h3>
+      <p>The Tar Heels script their openers well: they scored first against Notre Dame, built a 17-0 lead at Duke, and led Clemson 17-6 at halftime, though they trailed at the break at Pitt after being outgained 213-98 in the first half. Syracuse has already been outscored 78-36 in second halves, and its quarterbacks are more likely to make mistakes when forced to throw to catch up. If UNC gets out to a two-score lead by halftime, the game script favors Belichick's team.</p></article>
+  </div>
+</section>
+
+<section id="concern">
+  <div class="sh"><span class="no">14</span><h2>Where UNC Should Be Concerned</h2><p class="note">Six ways this goes sideways, led by the one that needs the least help.</p></div>
+  <div class="cards worry">
+    <article class="card"><div class="n">CONCERN 01</div><h3>Hatcher, Russell and the explosive play</h3>
+      <p>The most dangerous thing about Syracuse is not its record. It is that all three Syracuse starters have thrown for 300 yards in a game, and the common denominator is a receiver group with real speed. Hatcher caught 13 passes for 224 yards against Louisville and has seven touchdowns, Russell is a five-star talent, and Ross-Simmons wins contested balls. UNC's secondary has been excellent at making plays at the end of games, but Syracuse can score quickly, and the Tar Heels allowed Notre Dame's CJ Carr four touchdown passes. A pair of 40-yard shots in the first half would change the shape of this game before UNC's run game can establish itself.</p></article>
+    <article class="card"><div class="n">CONCERN 02</div><h3>Third down and sustained drives</h3>
+      <p>UNC's defense is 113th nationally on third down, allowing 43.3 percent conversions, and Syracuse's offense converts 41.8 percent (60th). Louisville converted six of seven third downs against the Orange defense, so the trend is not unique to UNC, but it matters because Syracuse's offense gains nearly 450 yards a game. If UNC cannot get Syracuse off the field, the defense will tire in the same way it did at Clemson, where the Tar Heels were outscored 22-3 in the second half by an up-tempo offense.</p></article>
+    <article class="card"><div class="n">CONCERN 03</div><h3>The run defense</h3>
+      <p>UNC has allowed 241 rushing yards on 45 carries to Notre Dame and 150 at Pitt, and its 147.3 yards allowed per game ranks 80th. Syracuse does not have Notre Dame's offensive line, but it has Ahmad Miller (1,054 yards at Jackson State last year, 123 on 18 carries against Louisville) and Tylik Hill (140 on 28 carries at UConn) in a rotation that can wear out a front seven. If the Orange establish the run, the play-action game over the top to Hatcher becomes very difficult to defend, and Syracuse can put together the long drives that UNC has had trouble stopping.</p></article>
+    <article class="card"><div class="n">CONCERN 04</div><h3>Edwards and the turnover margin</h3>
+      <p>Edwards threw two interceptions against Notre Dame and two more at Pitt, and even with a clean day from him at Duke, UNC lost the turnover battle 2-1, including Shipp's fumble that Duke returned for a touchdown. Syracuse's defense is a good bet to take advantage of those mistakes. Davien Kerr has two interceptions and a sack in a single game, and he showed against Louisville how quickly a throw over the middle can turn into a turnover. UNC can survive one turnover. It probably cannot survive three against a team that scores from anywhere.</p></article>
+    <article class="card"><div class="n">CONCERN 05</div><h3>The second half</h3>
+      <p>This is the clearest weakness on the UNC side of the ball. At Clemson, UNC led 17-6 at halftime and lost 28-20, and the criticism of the second-half sequencing was aimed at Petrino. At Duke, UNC led 17-0 and trailed 20-17 late in the fourth quarter before McGill's 24-yard run. It has won two straight because the defense made plays at the end and a few big offensive plays landed, not because the offense controlled games. Edwards was sacked five times across the Pitt and Duke games, and Syracuse's pass rush with Johnson (13.5 sacks last year) and Adeleye can attack tired tackles.</p></article>
+    <article class="card"><div class="n">CONCERN 06</div><h3>The trap</h3>
+      <p>No. 1 Miami comes to Kenan on October 31. Syracuse is one loss from tying the school record for consecutive ACC defeats, three of its four losses have been by one score or fewer, and Fran Brown has said his team is peaking. A team with nothing to lose and a dangerous group of receivers is exactly the kind of opponent that a team looking ahead to the No. 1 team in the country can underestimate. UNC has won two straight without playing particularly cleanly, and the margin for error is thin.</p></article>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="sh"><span class="no">15</span><h2>How I Think It Breaks Down</h2><p class="note">I think this is a game UNC controls in the middle two quarters and has to survive at the edges. Syracuse is the more dangerous team through the air, UNC is the better team in nearly every other phase, and the story of the night is whether the Tar Heels can keep Syracuse's receivers from turning a defensive and special teams edge into a coin flip.</p></div>
+  <div class="ls"><table>
+    <thead><tr><th>My line score</th><th>1</th><th>2</th><th>3</th><th>4</th><th>Final</th></tr></thead>
+    <tbody>
+      <tr class="u"><td>North Carolina</td><td>7</td><td>10</td><td>7</td><td>7</td><td class="t">31</td></tr>
+      <tr class="s"><td>Syracuse</td><td>7</td><td>6</td><td>3</td><td>7</td><td class="t">23</td></tr>
+      <tr><td class="half-mark" style="font:500 12px/1 var(--mono);letter-spacing:.08em;text-transform:none">Running score</td><td class="half-mark">7-7</td><td class="half-mark">17-13</td><td class="half-mark">24-16</td><td class="half-mark">31-23</td><td></td></tr>
+    </tbody></table></div>
+  <div class="flow">
+    <article class="q"><div class="qh"><h3>First quarter: Syracuse swings first</h3><span class="qn">Q1</span></div><p><span class="run"><span class="a">7</span> - <span class="b">7</span></span></p>
+      <p>I expect Syracuse to come out throwing. Fran Brown's team started fast against Louisville (a 10-0 lead on two early shots to Hatcher) and Nixon's offense has no interest in playing conservatively, even with a backup quarterback. I expect at least one early downfield attempt to Hatcher and probably one to Russell, and I expect UNC's secondary to give up a chunk play. UNC will answer with its script. The Tar Heels have opened games well all season (74 yards in seven plays against Notre Dame, a 17-0 lead at Duke), and I think Petrino calls a run-heavy opening drive that ends with Edwards finding Thurman or Shipp in the end zone. I have it 7-7 after one quarter.</p></article>
+    <article class="q"><div class="qh"><h3>Second quarter: the line takes over</h3><span class="qn">Q2</span></div><p><span class="run"><span class="a">17</span> - <span class="b">13</span> at the half</span></p>
+      <p>This is where I think the game turns. Lewis and Abou Jaoude start winning on a Syracuse offensive line that gave up 38 sacks last year and five against Louisville, and the run game starts to wear down a front that only has two linebackers. June gets a short-yardage touchdown, Verhoff adds a field goal after a drive that stalls, and Syracuse answers with a touchdown that is dampened by a missed extra point, a continuation of its kicking problems. That puts UNC up 17-13 at the half, with the Tar Heels getting the ball to start the third quarter.</p></article>
+    <article class="q"><div class="qh"><h3>Third quarter: the run game</h3><span class="qn">Q3</span></div><p><span class="run"><span class="a">24</span> - <span class="b">16</span></span></p>
+      <p>If the pattern holds, Syracuse's defense, which has been outscored 78-36 after halftime this season, begins to give. I would expect UNC to run on 15 or more of its 20 snaps in the quarter, with McGill carrying the heavier load and Hall and June working in short-yardage situations. McGill's go-ahead 24-yard run at Duke is the kind of play that comes when a defense starts losing contain. UNC scores a touchdown to make it 24-13. Syracuse manages a field goal after Edwards takes a sack and the Tar Heels have to punt. It is 24-16 going to the fourth.</p></article>
+    <article class="q"><div class="qh"><h3>Fourth quarter: survive</h3><span class="qn">Q4</span></div><p><span class="run"><span class="a">31</span> - <span class="b">23</span> final</span></p>
+      <p>This is the stretch that worries me. UNC was outscored 22-3 in the second half at Clemson and gave up 20 unanswered at Duke, and Syracuse's receivers are the type to beat tired corners. I expect the Orange to hit a late score. The difference is the clock. UNC leans on a long, run-heavy drive that ends in a touchdown with about seven minutes remaining to make it 31-16, and Syracuse's last-gasp touchdown with Lauter or Nelson comes after the outcome is mostly decided, making the final 31-23.</p></article>
+  </div>
+  <div class="why"><h3>Why this is not a blowout</h3>
+    <p>I am not picking a blowout because three things can go wrong for UNC. If Hatcher goes over 150 yards again, UNC's third-down defense (43.3 percent allowed, 113th) will not be able to get Syracuse off the field. If Edwards throws two interceptions, Kerr and the Syracuse secondary will take advantage. And if Syracuse runs the ball effectively, the play-action game over the top will be difficult to defend. None of those things needs to happen for Syracuse to score 23, but I do not think all of them will happen on the same night.</p></div>
+</section>
+
+<section id="pick">
+  <div class="final">
+    <div class="lab">Score prediction &middot; Kenan Stadium &middot; Oct 24</div>
+    <div class="fin-row"><div class="t">North Carolina</div><div class="sc"><span class="a">31</span><em>&ndash;</em><span class="b">23</span></div><div class="t">Syracuse</div></div>
+    <div class="cols">
+      <p>My number is North Carolina 31, Syracuse 23. The shape is four Carolina touchdowns and a Rece Verhoff field goal against three Syracuse touchdowns, one of which comes with a missed extra point, and a field goal, because that is how this Orange season has gone. UNC wins the rushing battle, wins the penalty battle by a wide margin, wins special teams, and probably wins the turnover battle even if Billy Edwards gives one back. Syracuse wins the passing yardage and probably the total yardage, which is exactly the kind of box score that makes a nine-point opening line feel uncomfortable.</p>
+      <p>The honest caveat is the number itself. An eight-point win sits a point and a half inside the opening spread of 9.5, so this is a pick that says UNC wins the game and Syracuse's receivers are good enough to keep the scoreboard from looking like the rankings. The things that would move it: a healthy Steve Angeli or a sharp Amari Odom makes Syracuse's ceiling higher and the Tar Heels' third-down defense a bigger problem, while a Lauter start with a limited script pushes this toward 28-14. The scenario that would flip the game is Edwards throwing two or three interceptions while Hatcher goes over 150 yards again. I do not expect that, but I would not call it a long shot either.</p>
+      <p class="full">The Tar Heels are the better team on Saturday night. They are also a team that has needed a late play to win each of its last two games, and the margin between a comfortable conference win and another nervous finish is thin. If they are ahead at the half and lean on the run, 31-23 is the way I see it ending, and No. 1 Miami is waiting next week with UNC at 5-2.</p>
+    </div>
+  </div>
+  <footer class="end">Edge meters are my read of each matchup, not a statistic.</footer>
+</section>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement, body=document.body;
+  function get(k){try{return localStorage.getItem(k)}catch(e){return null}}
+  function set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+  // view toggle
+  var btns=[].slice.call(document.querySelectorAll('.seg button'));
+  function setView(v){
+    body.setAttribute('data-view',v);
+    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.v===v))});
+    set('hv-view',v);
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){setView(b.dataset.v)})});
+  var sv=get('hv-view'); setView(sv==='unc'||sv==='cuse'?sv:'both');
+  // theme toggle
+  var tb=document.getElementById('themeBtn');
+  function isDark(){
+    var t=root.getAttribute('data-theme');
+    if(t) return t==='dark';
+    return !(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches);
+  }
+  var st=get('hv-theme'); if(st==='light'||st==='dark') root.setAttribute('data-theme',st);
+  tb.addEventListener('click',function(){var n=isDark()?'light':'dark';root.setAttribute('data-theme',n);set('hv-theme',n)});
+  // scroll spy
+  var links={}; [].forEach.call(document.querySelectorAll('.links a'),function(a){links[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          Object.keys(links).forEach(function(k){links[k].classList.remove('on')});
+          var a=links[e.target.id]; if(a){a.classList.add('on'); var box=a.parentNode; var l=a.offsetLeft-box.clientWidth/2+a.clientWidth/2; if(box.scrollTo) box.scrollTo({left:l,behavior:'smooth'});}
+        }
+      });
+    },{rootMargin:'-30% 0px -60% 0px'});
+    Object.keys(links).forEach(function(k){var s=document.getElementById(k); if(s) io.observe(s)});
+  }
+})();
+</script>
+
+</body></html>
